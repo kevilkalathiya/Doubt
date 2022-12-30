@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .menu {
+        /* height: 80px; */
+        width: 50%;
+        background: #000;
+
+        text-align: center;
+      }
+
+      .menu_ul {
+        background: green;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .menu_li {
+        display: inline;
+        margin-right: 20px;
+        position: relative;
+      }
+
+      .test {
+        opacity: 0;
+
+        /* height: 200px; */
+        /* width: 200px; */
+        background-color: lightblue;
+        border-radius: 3px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transition: 1s;
+      }
+
+      .menu_li:hover .test {
+        opacity: 1;
+
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <ul class="menu_ul">
+        <li class="menu_li"><a href="#" class="home">Home</a></li>
+        <li class="menu_li">
+          <a href="#">About us</a>
+
+          <div class="test">
+            <p>dfs</p>
+            <p>dfs</p>
+            <p>dfs</p>
+            <p>dfs</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
